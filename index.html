@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Complete Responsive Portfolio Website</title>
+    </head>
+    <body>
+
+         <!-- HEADER -->
+         <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Abu Huraira</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abu Huraira</span><br>Laravel Developer</h1>
+
+                    <a href="https://wa.me/923137676089?text=Hello%20from%20WhatsApp!" class="button">WhatsApp</a>  
+                </div>
+
+                <div class="home__social">
+                    <a href="www.linkedin.com/in/abu-huraira-software-engineer" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <!-- <a href="https://www.behance.net/ranasharjeelali" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
+                    <a href="https://github.com/AbuHuraira191" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://wa.me/923137676089?text=Hello%20from%20WhatsApp!" class="home__social-icon" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                      
+                </div>
+
+                <div class="home__img">    
+                    <img src="img/profile1.png" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="img/about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Abu Huraira</h2>
+                        <p class="about__text">As an experienced Laravel Developer with a proven track record spanning 3 years, I specialize in creating robust and scalable web applications. My expertise lies in leveraging the power of the Laravel framework to develop efficient, maintainable, and high-performance solutions. From database design to API integrations, I am dedicated to delivering Laravel-based applications that meet and exceed client expectations. Let's collaborate to bring your web development projects to fruition and achieve remarkable results!</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">As a Laravel developer, I possess a variety of professional skills that make me an asset in the software development industry.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="https://laravel.com/img/logomark.min.svg" style="
+                                width: 30px;
+                                height: 40px"/>&nbsp;
+                                <span class="skills__name">Laravel</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <!-- <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAsZJREFUWEftl1FW00AUhv+bgQSexBVYLT4LK7CsQFwB7QqszxoNRJ+tK7CswLoCywrEZwmUHZQnaGRyPZM0dFpKZtqmRzzHPmYyM1//e/97bwj37Ef3jAf/LlAluKwI4ZxJmTzuBeu9ZSlrrVA1HOwC+ApQN/Ldnb8OtBkOAgbeKxBCsnPir3eXAWWv0MGgA8KLDGJ5KtkDhVddgJ7nqugqKfUS4v7p27XWoqrNADRg/TIGjk99bztPdrVWRsJbAemX6lAKQDhOaxRKHEa+V9ffqR7EdRD2bI1gBbQZXtYYzveJcBwSkvbkc12lDIa/qH2OQ9u/3rjHppBaAT35cNUkpk/aYRdSuhUhBh09r4brqUo6zPD5y8j3OqUAVcO4BfCrUUJjn5l6+b8fu4SpkRkxU0bfc+J7QUlAYw47l9LdEiJW8j+ahHEEjpOEVXg3xtfwLXrnqeJa+LMKWTUcqFaRXc7UIOJKXiRvTmdq3AmTbTyK/LVaWUCp5Qn4eS3dmhDx2ZgCRpgMI/I9owDGF3SHqWLIcJSt9+yVGWliU6eMQCO38JGUXFcdfx6YTGFzDzQC5U01LYKC2jc2twzTrE4zAlXTpko9guzcFME5YIZgtyr5ZJKbgcKrrpTe7oqIuww8Uy4rdlORj8xOMwKlIcuL4EIwdk4zAlUC3hAr8Q8ktD+/MrrT3Ie9gPp36WgEyhUqA8bGaYVAqToirjkO9aa2A1PZnbLOxK+LBjkj0Orq70pZMBkffY58tzlXyJ5+jLfKhTH3tEKFhp8+bQAP5ojOtC0XAOpFc5ExqVUerYi4eau7z0Z4QUDrWrqtIocNG7jdyelcPT4/220EDqVMAtuvXaNCk7dm3Z+CKaPrxKt8ROBg1g/KmYHyW4dTgBpJx6dG4BxA02Z+nibx3EDqMC2/lI37TNxa9GNxISDbJJrlvf9AJrX+ACXfczRMMcLuAAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">APIs Development</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div> -->
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="https://laravel.com/img/logomark.min.svg" style="
+                                width: 30px;
+                                height: 40px"/>&nbsp;
+                                 <span class="skills__name">API Development</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">100%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAsZJREFUWEftl1FW00AUhv+bgQSexBVYLT4LK7CsQFwB7QqszxoNRJ+tK7CswLoCywrEZwmUHZQnaGRyPZM0dFpKZtqmRzzHPmYyM1//e/97bwj37Ef3jAf/LlAluKwI4ZxJmTzuBeu9ZSlrrVA1HOwC+ApQN/Ldnb8OtBkOAgbeKxBCsnPir3eXAWWv0MGgA8KLDGJ5KtkDhVddgJ7nqugqKfUS4v7p27XWoqrNADRg/TIGjk99bztPdrVWRsJbAemX6lAKQDhOaxRKHEa+V9ffqR7EdRD2bI1gBbQZXtYYzveJcBwSkvbkc12lDIa/qH2OQ9u/3rjHppBaAT35cNUkpk/aYRdSuhUhBh09r4brqUo6zPD5y8j3OqUAVcO4BfCrUUJjn5l6+b8fu4SpkRkxU0bfc+J7QUlAYw47l9LdEiJW8j+ahHEEjpOEVXg3xtfwLXrnqeJa+LMKWTUcqFaRXc7UIOJKXiRvTmdq3AmTbTyK/LVaWUCp5Qn4eS3dmhDx2ZgCRpgMI/I9owDGF3SHqWLIcJSt9+yVGWliU6eMQCO38JGUXFcdfx6YTGFzDzQC5U01LYKC2jc2twzTrE4zAlXTpko9guzcFME5YIZgtyr5ZJKbgcKrrpTe7oqIuww8Uy4rdlORj8xOMwKlIcuL4EIwdk4zAlUC3hAr8Q8ktD+/MrrT3Ie9gPp36WgEyhUqA8bGaYVAqToirjkO9aa2A1PZnbLOxK+LBjkj0Orq70pZMBkffY58tzlXyJ5+jLfKhTH3tEKFhp8+bQAP5ojOtC0XAOpFc5ExqVUerYi4eau7z0Z4QUDrWrqtIocNG7jdyelcPT4/220EDqVMAtuvXaNCk7dm3Z+CKaPrxKt8ROBg1g/KmYHyW4dTgBpJx6dG4BxA02Z+nibx3EDqMC2/lI37TNxa9GNxISDbJJrlvf9AJrX+ACXfczRMMcLuAAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">JS</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAaxJREFUWEft101Og0AYBuD3GyzWlb2BJK1r6wlsb9CewDO4ViMJca1X8AQewXoD9kalN2hXleowBhtSQodhKAw20dlCmIfvj4GwY4t2zIO/CXJc0WFWeB5nI+L7D4FLs7zMGI/Q8e2yH0XiCUDnB0EIGNH45dL2ZSijoA3MWjBjjIYylDGQApOwpChjoLhu9qzlRAAnuZ1MCPiXfZquKWOgGKGDEiQu3q7a9wm6VtAqTbjjvDVO3roIZQyUrhkB+BG3hxqoKed2v/aUyQpYAzVnjAbZTqucMlU3KVCODLMaUxWWRmtDhmq1Pp3aB6MOJnnXLEoVg60iVAaz3lw8v163B0UJKQ3aDgNpAVf+lpnGlCrqJjDaoKYwWqAmMYWgpjFK0G9glKCuFwYAjormRuq6dmuXHoyOu3Asi703jcmNUNcLRwAeNUG1REZ5QOt5oSuAGw1QrRhFhD4mAJ0VgGrHqFIW/8gdKkBGMFKQRkFPGaNR3nlGI83KWza+9pmCngPCJ1D8O+NzHvmBexCPA2NrA9TzFgMB1mli88rHD2NhST249AHNNOofVBThb69tLDSrFC39AAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">Ajax & JQuery</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                             <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="img/skills.png" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title"> Recent Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <a href="https://app.connectify.co/"target="_blank" ><img src="img/Twillio.png" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="http://learn.thedriverx.com/"target="_blank" ><img src="img/deriverX.png" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://tw.connectify.co/"target="_blank" ><img src="img/connectify.png" alt=""></a>
+                    </div>
+                    <!-- <div class="work__img">
+                        <a href="https://organicgo.pk/"target="_blank" ><img src="img/images.png" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://organicgo.pk/"target="_blank" ><img src="img/images.png" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://organicgo.pk/"target="_blank" ><img src="img/images.png" alt=""></a>
+                    </div> -->
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" style="height: 80px; width: 360px;"></textarea>
+                        <input type="button" value="Enter" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Abu Huraira</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <!-- <p>&#169; 2021 copyright all right reserved</p> -->
+        </footer>
+    </body>
+</html>
